@@ -11,6 +11,6 @@ body {
 
 * {
     font-family: Railway, sans-serif;
-    color: gainsboro;
     text-decoration: none;
+    box-sizing: border-box;
 }

@@ -1,13 +1,29 @@
 import { Link } from 'react-router-dom';
-import style from './Navbar.module.css';
+import s from './Navbar.module.css';
+import { HomeIcon, LaptopIcon, PersonIcon, ReaderIcon } from '@radix-ui/react-icons';
 
 export const Navbar = () => {
     return (
-        <div className={style.wrapper}>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/resume">Resume</Link>
+        <div className={s.wrapper}>
+            <p className={s.logo}>Yp.</p>
+            <div className={s.navbar}>
+                <Link className={s.link} to="/">
+                    <HomeIcon />
+                    Home
+                </Link>
+                <Link className={s.link} to="/about">
+                    <PersonIcon />
+                    About
+                </Link>
+                <Link className={s.link} to="/projects">
+                    <LaptopIcon />
+                    Projects
+                </Link>
+                <Link className={s.link} to="/resume">
+                    <ReaderIcon />
+                    Resume
+                </Link>
+            </div>
         </div>
     );
 };

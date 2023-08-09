@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { Navbar } from '../Navbar/Navbar';
 import { loadSlim } from 'tsparticles-slim';
-import { memo, useCallback } from 'react';
+import { useCallback } from 'react';
 import type { Engine, Container } from 'tsparticles-engine';
 import Particles from 'react-tsparticles';
 import { particlesOptions } from './particles';

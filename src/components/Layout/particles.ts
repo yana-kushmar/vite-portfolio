@@ -1,7 +1,10 @@
 export const particlesOptions = {
     background: {
         color: {
-            value: '#000000',
+            value: '#18122B',
+            // value: '#3A1078',
+            // value: '#37306B',
+            // value: '#000000',
         },
     },
     fpsLimit: 120,
@@ -25,7 +28,8 @@ export const particlesOptions = {
     },
     particles: {
         color: {
-            value: '#d100ff',
+            value: '#fff',
+            // value: '#d100ff',
         },
         move: {
             direction: 'none',
@@ -50,7 +54,7 @@ export const particlesOptions = {
             type: 'circle',
         },
         size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 2 },
         },
     },
     detectRetina: true,

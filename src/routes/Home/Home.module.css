@@ -1,0 +1,26 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 140px;
+}
+.greeting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+.name {
+    color: #d100ff;
+}
+
+.intro {
+}
+
+.homeImg {
+    width: 450px;
+    height: 450px;
+}
