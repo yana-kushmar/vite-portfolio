@@ -4,20 +4,27 @@
     flex-direction: column;
     padding: 80px 140px;
 }
+
 .greeting {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #fff;
     font-size: 38px;
-    font-weight: 400;
+    font-weight: 500;
+    line-height: 32px;
 }
 
+.greeting div p {
+    margin: 0 0 32px 0;
+}
 .name {
     color: #d100ff;
 }
 
-.intro {
+.greeting > div > p:last-of-type {
+    margin: 48px 0 0 0;
+    text-align: left;
 }
 
 .homeImg {

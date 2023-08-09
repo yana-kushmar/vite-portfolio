@@ -12,8 +12,9 @@
 
 .logo {
     color: #d100ff;
-    font-weight: 600;
-    font-size: 28px;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
 }
 
 .navbar {
@@ -49,7 +50,6 @@
     width: 0;
     content: '';
     transition: all 0.3s ease-out;
-    z-index: -1;
 }
 
 .link:hover:after {

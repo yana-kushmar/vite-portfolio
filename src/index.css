@@ -10,7 +10,11 @@ body {
 }
 
 * {
-    font-family: Railway, sans-serif;
+    font-family: Raleway, serif;
     text-decoration: none;
     box-sizing: border-box;
+}
+.Typewriter__wrapper,
+.Typewriter__cursor {
+    color: #d100ff !important;
 }
