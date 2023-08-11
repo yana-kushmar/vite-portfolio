@@ -5,6 +5,7 @@ import { useCallback } from 'react';
 import type { Engine, Container } from 'tsparticles-engine';
 import Particles from 'react-tsparticles';
 import { particlesOptions } from './particles';
+import Footer from '../Footer/Footer';
 
 const Layout = () => {
     const particlesInit = useCallback(async (engine: Engine) => {
@@ -30,6 +31,7 @@ const Layout = () => {
             >
                 <Navbar />
                 <Outlet />
+                <Footer />
             </div>
         </>
     );

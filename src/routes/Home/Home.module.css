@@ -3,13 +3,14 @@
     display: flex;
     flex-direction: column;
     padding: 80px 140px;
+    color: #fff;
 }
 
 .greeting {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #fff;
+    /*color: #fff;*/
     font-size: 38px;
     font-weight: 500;
     line-height: 32px;
@@ -18,11 +19,11 @@
 .greeting div p {
     margin: 0 0 32px 0;
 }
-.name {
+.color {
     color: #d100ff;
 }
 
-.greeting > div > p:last-of-type {
+.greeting > div > div {
     margin: 48px 0 0 0;
     text-align: left;
 }
@@ -30,4 +31,81 @@
 .homeImg {
     width: 450px;
     height: 450px;
+}
+
+.photo {
+    width: 250px;
+}
+
+.intro {
+    margin-top: 120px;
+    font-weight: 400;
+    line-height: 36px;
+    font-size: 20px;
+}
+
+.intoTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 58px;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.introContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro div p:last-of-type {
+    margin-bottom: 0;
+}
+
+.intro div p:first-of-type {
+    margin-top: 0;
+}
+
+.connect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 38px;
+    font-weight: 500;
+    margin-top: 58px;
+}
+.connect p {
+    margin: 0 0 0 0;
+}
+
+.connect p:last-of-type {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    gap: 24px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: #700c86;
+}
+
+.icon svg {
+    width: 20px;
+    height: 20px;
 }

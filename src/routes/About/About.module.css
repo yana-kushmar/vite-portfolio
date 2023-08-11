@@ -1,0 +1,40 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 60px 80px 140px;
+
+    color: #fff;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.whoI {
+    margin-left: 160px;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.photo {
+    width: 580px;
+    height: 400px;
+}
+
+.techIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+}
