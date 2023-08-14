@@ -1,8 +1,14 @@
 import about from '../../assets/about.png';
 import s from './About.module.css';
 import c from '../Home/Home.module.css';
-import { DiJavascript1, DiReact } from 'react-icons/di';
+import { DiCss3, DiJavascript1, DiReact } from 'react-icons/di';
 import { BiLogoRedux, BiLogoTypescript } from 'react-icons/bi';
+import { SiAxios, SiJest, SiMui, SiPostman, SiWebpack, SiWebstorm } from 'react-icons/si';
+import { TbBrandVite } from 'react-icons/tb';
+import { BsGit, BsGithub } from 'react-icons/bs';
+import GitHubCalendar from 'react-github-calendar';
+import { AiOutlineHtml5 } from 'react-icons/ai';
+import { FaFigma } from 'react-icons/fa';
 
 const About = () => {
     return (
@@ -24,12 +30,16 @@ const About = () => {
                         </p>
                         <p> Here's a peek into what drives my development journey:</p>
                         <p>
-                            <span className={c.color}>Proficiency</span> in core
-                            technologies like React, Redux, and TypeScript.
+                            <span className={c.color}>
+                                <b>Proficiency</b>
+                            </span>{' '}
+                            in core technologies like React, Redux, and TypeScript.
                         </p>
                         <p>
-                            <span className={c.color}>Design Integration</span>: Seamless
-                            integration of UI frameworks like MaterialUI.
+                            <span className={c.color}>
+                                <b>Design Integration</b>
+                            </span>
+                            : Seamless integration of UI frameworks like MaterialUI.
                         </p>
                         <p>
                             <span className={c.color}>Form Handling</span>: Efficient and
@@ -51,17 +61,90 @@ const About = () => {
             </div>
 
             <div>
-                <p>
-                    Professional <span className={c.color}>Skillset</span>
+                <p className={s.title}>
+                    Professional
+                    <span style={{ margin: '0 8px' }} className={c.color}>
+                        Skillset
+                    </span>
                 </p>
                 <div className={s.techIcons}>
-                    <DiJavascript1 />
-                    <DiReact />
-                    <BiLogoTypescript />
-                    <BiLogoRedux />
+                    <div className={s.icon}>
+                        <DiJavascript1 />
+                    </div>
+                    <div className={s.icon}>
+                        <DiReact />
+                    </div>
+                    <div className={s.icon}>
+                        <BiLogoTypescript />
+                    </div>
+                    <div className={s.icon}>
+                        <BiLogoRedux />
+                    </div>
+                    <div className={s.icon}>
+                        <SiMui />
+                    </div>
+                    <div className={s.icon}>
+                        <TbBrandVite />
+                    </div>
+                    <div className={s.icon}>
+                        <BsGit />
+                    </div>
+                    <div className={s.icon}>
+                        <SiJest />
+                    </div>
+                    <div className={s.icon}>
+                        <SiAxios />
+                    </div>
+                    <div className={s.icon}>
+                        <DiCss3 />
+                    </div>
+                    <div className={s.icon}>
+                        <AiOutlineHtml5 />
+                    </div>
+                    <div className={s.icon}>
+                        <SiWebpack />
+                    </div>
                 </div>
             </div>
-            <div></div>
+            <div>
+                <p className={s.title}>
+                    <span style={{ margin: '0 8px' }} className={c.color}>
+                        Tools
+                    </span>{' '}
+                    I use
+                </p>
+                <div className={s.techIcons}>
+                    <div className={s.icon}>
+                        <SiWebstorm />
+                    </div>
+                    <div className={s.icon}>
+                        <SiPostman />
+                    </div>
+                    <div className={s.icon}>
+                        <BsGithub />
+                    </div>
+                    <div className={s.icon}>
+                        <FaFigma />
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div>
+                <p className={s.title}>
+                    Days I{' '}
+                    <span style={{ margin: '0 8px' }} className={c.color}>
+                        Code
+                    </span>
+                </p>
+                <div className={s.gitHub}>
+                    <GitHubCalendar
+                        username="yana-kushmar"
+                        theme={{
+                            light: ['#fff', '#d100ff'],
+                        }}
+                    />
+                </div>
+            </div>
         </div>
     );
 };

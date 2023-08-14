@@ -2,8 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 80px 60px 80px 140px;
-
+    padding: 80px 140px;
     color: #fff;
 }
 
@@ -17,8 +16,14 @@
     line-height: 32px;
 }
 
+.info div p:last-of-type {
+    margin-bottom: 0;
+}
+
 .whoI {
-    margin-left: 160px;
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 4px;
 }
 
 .text {
@@ -27,14 +32,55 @@
 }
 
 .photo {
-    width: 580px;
-    height: 400px;
+    width: 540px;
+    height: 380px;
 }
 
 .techIcons {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 24px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 130px;
+    border: 2px solid #c889e6a2;
+    border-radius: 5px;
+    box-shadow: 4px 5px 4px 3px #5904a822;
+}
+
+.icon:hover {
+    transform: scale(1.05);
+    overflow: hidden;
+    border: 2px solid rgba(197, 115, 230, 0.883);
+}
+
+.icon svg {
+    width: 64px;
+    height: 64px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 80px;
+}
+
+.gitHub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c084f5;
+    font-size: 16px;
 }

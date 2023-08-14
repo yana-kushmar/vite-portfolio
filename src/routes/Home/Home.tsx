@@ -57,7 +57,7 @@ const Home = () => {
                         <p>Keen to see my work?</p>
 
                         <p>
-                            Check out my <span className={s.color}>portfolio</span>!{' '}
+                            Check out my <link className={s.color}>portfolio</link>!{' '}
                             <br /> And hey, if you're looking for a blend of tech and art,
                             let's chat!
                         </p>
