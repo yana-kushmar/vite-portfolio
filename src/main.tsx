@@ -1,5 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { pdfjs } from 'react-pdf';
 
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -8,6 +9,8 @@ import Home from './routes/Home/Home';
 import About from './routes/About/About';
 import Projects from './routes/Projects/Projects';
 import Resume from './routes/Resume /Resume';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
 const router = createBrowserRouter(
     [
