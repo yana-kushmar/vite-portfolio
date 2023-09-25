@@ -32,11 +32,7 @@ export const particlesOptions = {
             // value: '#d100ff',
         },
         move: {
-            direction: 'none',
             enable: true,
-            outModes: {
-                default: 'bounce',
-            },
             random: true,
             speed: 2,
         },

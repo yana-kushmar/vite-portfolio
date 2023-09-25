@@ -17,35 +17,33 @@ const Projects = () => {
                     <img className={s.photo} src={blog} alt="photo of my project" />
                     <p>Social Network</p>
                     <p>
-                        Personal Chat Room or Workspace to share resources and hangout
-                        with friends build with react.js, Material-UI, and Firebase. Have
-                        features which allows user for realtime messaging, image sharing
-                        as well as supports reactions on messages.
+                        Stack: React, TypeScript, Redux, redux-thunk, reselect,
+                        styled-components, axios, formik, react-router
                     </p>
                     <div className={s.buttons}>
-                        <button>GitHub</button>
-                        <button>Demo</button>
+                        <a href="https://github.com/yana-kushmar/samurai-way">GitHub</a>
                     </div>
                 </div>
                 <div className={s.card}>
                     <img className={s.photo} src={blog} alt="photo of my project" />
-                    <p>Social Network</p>
+                    <p>TodoList</p>
                     <p>
-                        Personal Chat Room or Workspace to share resources and hangout
-                        with friends build with react.js, Material-UI, and Firebase. Have
-                        features which allows user for realtime messaging, image sharing
-                        as well as supports reactions on messages.
+                        Stack: React, TypeScript, Redux, redux-thunk, storybook, axios,
+                        formik, git, unit tests
                     </p>
+                    <div className={s.buttons}>
+                        <a href="https://github.com/yana-kushmar/Todolist-main">GitHub</a>
+                    </div>
                 </div>
                 <div className={s.card}>
                     <img className={s.photo} src={blog} alt="photo of my project" />
-                    <p>Social Network</p>
-                    <p>
-                        Personal Chat Room or Workspace to share resources and hangout
-                        with friends build with react.js, Material-UI, and Firebase. Have
-                        features which allows user for realtime messaging, image sharing
-                        as well as supports reactions on messages.
-                    </p>
+                    <p>Portfolio</p>
+                    <p>Stack: Vite, React, TypeScript, react-tsparticles, react-router</p>
+                    <div className={s.buttons}>
+                        <a href="https://github.com/yana-kushmar/vite-portfolio">
+                            GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

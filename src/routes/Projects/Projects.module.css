@@ -74,7 +74,10 @@
     margin-top: 24px;
 }
 
-.buttons button {
+.buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100px;
     height: 36px;
     background-color: #623686;

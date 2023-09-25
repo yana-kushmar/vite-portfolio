@@ -7,6 +7,7 @@ import {
     InstagramLogoIcon,
     LinkedInLogoIcon,
 } from '@radix-ui/react-icons';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -57,9 +58,12 @@ const Home = () => {
                         <p>Keen to see my work?</p>
 
                         <p>
-                            Check out my <link className={s.color}>portfolio</link>!{' '}
-                            <br /> And hey, if you're looking for a blend of tech and art,
-                            let's chat!
+                            Check out my{' '}
+                            <Link to="/projects" className={s.color}>
+                                portfolio
+                            </Link>
+                            ! <br /> And hey, if you're looking for a blend of tech and
+                            art, let's chat!
                         </p>
                     </div>
                     <img className={s.photo} src={photo} alt="my photo" />
