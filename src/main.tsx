@@ -9,30 +9,33 @@ import About from './routes/About/About';
 import Projects from './routes/Projects/Projects';
 import Resume from './routes/Resume /Resume';
 
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Layout />,
-        children: [
-            {
-                index: true,
-                element: <Home />,
-            },
-            {
-                path: 'about',
-                element: <About />,
-            },
-            {
-                path: 'projects',
-                element: <Projects />,
-            },
-            {
-                path: 'resume',
-                element: <Resume />,
-            },
-        ],
-    },
-]);
+const router = createBrowserRouter(
+    [
+        {
+            path: '/',
+            element: <Layout />,
+            children: [
+                {
+                    index: true,
+                    element: <Home />,
+                },
+                {
+                    path: 'about',
+                    element: <About />,
+                },
+                {
+                    path: 'projects',
+                    element: <Projects />,
+                },
+                {
+                    path: 'resume',
+                    element: <Resume />,
+                },
+            ],
+        },
+    ],
+    { basename: '/vite-portfolio' },
+);
 
 const root = createRoot(document.getElementById('root')!);
 
